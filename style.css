@@ -1,0 +1,65 @@
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="number"],
+input[type="color"],
+input[type="file"],
+button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+select {
+  height: 34px;
+}
+
+.button{
+	display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+	width: auto;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}

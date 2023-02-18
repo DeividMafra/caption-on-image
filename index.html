@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Meme Generator</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Meme Generator</h1>
+		<div class="container">
+			<div class="left-side">
+				<div>
+					<label for="image-upload">Upload Image:</label>
+					<input type="file" id="image-upload">
+				</div>
+		
+				<div>
+					<label for="text-input-1">Text 1:</label>
+					<input type="text" id="text-input-1">
+				</div>
+		
+				<div>
+					<label for="text-input-2">Text 2:</label>
+					<input type="text" id="text-input-2">
+				</div>
+		
+				<div>
+					<label for="text-font">Font:</label>
+					<select id="text-font">
+						<option value="Arial">Arial</option>
+						<option value="Comic Sans MS">Comic Sans</option>
+						<option value="Pacifico">Pacifico</option>
+					</select>
+				</div>
+		
+				<div>
+					<label for="text-size">Size:</label>
+					<input type="number" id="text-size" min="12" max="72" value="24">
+				</div>
+		
+				<div>
+					<label for="text-color">Color:</label>
+					<input type="color" id="text-color" value="#ffffff">
+				</div>
+		
+			</div>
+	
+			<div class="right-side">
+				<canvas id="canvas" width="400" height="400"></canvas>
+			</div>
+		</div>
+
+		<div class="button">
+			<button id="download-button">Download Meme</button>
+		</div>
+
+    <script src="meme_generator.js"></script>
+  </body>
+</html>
